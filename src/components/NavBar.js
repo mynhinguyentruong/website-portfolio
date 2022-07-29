@@ -15,17 +15,18 @@ const handleClick = () => {
 
   return (
     <div className='header'>
+      <div className='hamburger' onClick={handleClick}>
+        {click ? 
+        <FaTimes size={20} style={{color: 'white', cursor:'pointer'}} /> : 
+        <FaBars size={20} style={{color: 'white', cursor:'pointer'}} />}
+      </div>
       <Link to='/'><h1 >Portfolio</h1></Link>
       <ul className={click ? "nav-menu active" : "nav-menu" }>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/project'>Project</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
       </ul>
-      <div className='hamburger' onClick={handleClick}>
-        {click ? 
-        <FaTimes size={20} style={{color: 'white', cursor:'pointer'}} /> : 
-        <FaBars size={20} style={{color: 'white', cursor:'pointer'}} />}
-      </div>
+      
     </div >
   );
 }

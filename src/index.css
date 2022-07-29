@@ -41,7 +41,7 @@ ul {
 .btn-light {
   /* background: rgba(255, 255, 255, 0.2); */
   background: transparent;
-  color: #fff;
+  color: rgb(8, 7, 7);
 }
 
 .btn:hover {

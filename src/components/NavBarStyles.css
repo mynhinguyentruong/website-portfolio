@@ -33,7 +33,6 @@
     left: -100%;
     justify-content: center;
     background: rgba(0,0,0,0.9);
-    z-index: -3;
     transition: 0.3s;
   }
 
@@ -51,5 +50,6 @@
 
   .hamburger {
     display: initial;
+   z-index: 1;
   }
 }
